@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ศูนย์ข้อมูลสารสนเทศภูมิอากาศ - ปรากฏการณ์เอลนีโญและลานีญา</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts (Prompt) -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        /* Top Utility Bar */
+        .gov-topbar {
+            background-color: #0b2545;
+            color: #ffffff;
+            font-size: 0.85rem;
+            border-bottom: 3px solid #134074;
+        }
+        /* Navbar */
+        .navbar-gov {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+        .gov-logo-box {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #134074, #0b2545);
+            color: #ee6c4d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-size: 1.6rem;
+        }
+        /* Page Header Banner */
+        .page-header-section {
+            background: linear-gradient(135deg, #0b2545, #134074);
+            color: white;
+            padding: 45px 0;
+            border-bottom: 4px solid #ee6c4d;
+        }
+        /* Main Article Card */
+        .article-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            background-color: #ffffff;
+        }
+        .article-heading {
+            color: #0b2545;
+            font-weight: 700;
+            border-left: 5px solid #134074;
+            padding-left: 12px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+        .article-heading:first-of-type {
+            margin-top: 0;
+        }
+        /* Content Image Styling */
+        .content-img {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 1px solid #dee2e6;
+        }
+        /* Footer Sitemap Style (สารบัญสไตล์เว็บทั่วไป) */
+        .footer-sitemap {
+            background-color: #0b2545;
+            color: #ffffff;
+            padding: 50px 0 30px 0;
+            border-top: 5px solid #134074;
+        }
+        .footer-sitemap h5 {
+            color: #ee6c4d;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            border-bottom: 2px solid #134074;
+            padding-bottom: 8px;
+        }
+        .footer-sitemap ul li {
+            margin-bottom: 10px;
+        }
+        .footer-sitemap ul li a {
+            color: #ced4da;
+            text-decoration: none;
+            transition: color 0.2s;
+            font-size: 0.9rem;
+        }
+        .footer-sitemap ul li a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .sub-footer {
+            background-color: #07192f;
+            color: #8d99ae;
+            font-size: 0.85rem;
+            padding: 20px 0;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="gov-topbar py-2 px-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <i class="bi bi-globe-americas me-1"></i> ระบบสารสนเทศภูมิอากาศ (Climate Info Portal)
+            </div>
+            <div>
+                <span class="badge bg-danger"><i class="bi bi-telephone-fill me-1"></i> สายด่วน อต. 1182</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-gov sticky-top py-2">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+                <div class="gov-logo-box">
+                    <i class="bi bi-clouds-fill"></i>
+                </div>
+                <div>
+                    <h4 class="mb-0 fw-bold text-primary" style="line-height: 1.1; font-size: 1.2rem;">THAI-CLIMATE.INFO</h4>
+                    <small class="text-muted" style="font-size: 0.72rem;">เอลนีโญและลานีญา</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navContent">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link px-3 active fw-semibold" href="#">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#content-body">เนื้อหาทั้งหมด</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#footer-sitemap-section">สารบัญเว็บไซต์</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="page-header-section text-center">
+        <div class="container">
+            <span class="badge bg-warning text-dark mb-2 px-3 py-1 rounded-pill fw-bold">สารานุกรมความรู้อุตุนิยมวิทยา</span>
+            <h1 class="fw-bold mb-2 display-5">ปรากฏการณ์เอลนีโญและลานีญา</h1>
+            <p class="mb-0 text-light opacity-80">รวบรวมข้อมูลองค์ความรู้ ผลกระทบเชิงพื้นที่ และสถิติสำคัญจากศูนย์ภูมิอากาศ</p>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container my-5" id="content-body">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <!-- Article Content Container (รวมข้อมูลทั้งหมดไว้ในบล็อกการ์ดเดียว) -->
+                <div class="article-card p-4 p-md-5 mb-5">
+                    
+                    <!-- Section 1 -->
+                    <h3 id="sec-1" class="article-heading">1. เอลนีโญและลานีญา คืออะไร?</h3>
+                    <p class="text-secondary"><strong>เอลนีโญ (El Niño)</strong> คือการที่ผิวน้ำทะเลทางตะวันออกของมหาสมุทรแปซิฟิกเขตร้อนอุ่นขึ้น และแผ่ขยายกว้างไกลออกไป เป็นเวลานานถึง 3 ฤดูกาลหรือมากกว่า ในทางกลับกัน ถ้าผิวน้ำทะเลบริเวณนี้เย็นลงจะเรียกว่า <strong>ลานีญา (La Niña)</strong></p>
+                    <p class="text-secondary">นอกจากนี้ยังมีความผันแปรของระบบอากาศในซีกโลกใต้ (Southern Oscillation) ซึ่งหมายถึงปรากฏการณ์ที่ความกดอากาศด้านตะวันตกของมหาสมุทรแปซิฟิกบริเวณประเทศอินโดนีเซีย กับตอนกลางของมหาสมุทรแปซิฟิกเขตร้อน มักจะมีลักษณะตรงกันข้าม กล่าวคือ เมื่อความกดอากาศบริเวณอินโดนีเซียมีค่าสูง ความกดอากาศบริเวณตอนกลางแปซิฟิกมักจะมีค่าต่ำ (เรียกรวมกันว่าวัฏจักร ENSO)</p>
+
+                    <!-- Insert Image 1 -->
+                    <div class="text-center my-4">
+                        <img src="img/licensed-image.jfif" alt="อินโฟกราฟิกเปรียบเทียบเอลนีโญและลานีญา" class="img-fluid content-img w-75">
+                        <p class="small text-muted mt-2">ภาพอินโฟกราฟิกแสดงโครงสร้างกระแสน้ำและอุณหภูมิผิวทะเลของเอลนีโญและลานีญา</p>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <h3 id="sec-2" class="article-heading">2. ผลกระทบที่มีต่อประเทศไทย</h3>
+                    <p class="text-secondary">เมื่อเกิดปรากฏการณ์เอลนีโญขนาดรุนแรงขึ้น ปริมาณฝนของประเทศไทยมักมีค่าต่ำกว่าปกติ และอุณหภูมิของอากาศจะสูงขึ้นทั่วประเทศ ทำให้เกิดสภาวะความแห้งแล้งอย่างรุนแรง เช่น เอลนีโญขนาดรุนแรงในปี พ.ศ. 2540–2541 ส่วนผลกระทบจากลานีญาจะให้ผลตรงกันข้ามอย่างสิ้นเชิง กล่าวคือ ประเทศไทยจะมีฝนชุกหนาแน่นกว่าปกติ และอุณหภูมิในฤดูหนาวลดลงต่ำทำลายสถิติหลายจังหวัด เช่น ในช่วงปี พ.ศ. 2542–2543</p>
+
+                    <!-- Insert Image 2 -->
+                    <div class="text-center my-4">
+                        <img src="img/licensed-image (1).jfif" alt="แผนภาพโลกแสดงผลกระทบของเอลนีโญและลานีญา" class="img-fluid content-img w-75">
+                        <p class="small text-muted mt-2">ภาพจำลองลักษณะภูมิอากาศบนโลกเมื่อเกิดปรากฏการณ์ลานีญาและเอลนีโญ</p>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <h3 id="sec-3" class="article-heading">3. พื้นที่บริเวณใดของประเทศที่มีฝนมากและฝนน้อย?</h3>
+                    <p class="text-secondary">ลักษณะภูมิประเทศและทิศทางลมมีผลอย่างมากต่อปริมาณฝน โดยบริเวณที่มีฝนมากมักเป็นบริเวณด้านรับลม (หน้าทิวเขา) เช่น ในช่วงฤดูฝนที่มรสุมตะวันตกเฉียงใต้พัดปกคลุม อากาศชื้นจะปะทะแนวเขาและยกตัวกลั่นตัวเป็นฝน ได้แก่ พื้นที่ด้านตะวันตกของจังหวัดตากและกาญจนบุรี (ด้านรับลมทิวเขาถนนธงชัยและตะนาวศรี) ส่วนพื้นที่ซึ่งเป็นด้านปลายลมหลังทิวเขา จะมีฝนน้อยกว่า เช่น บริเวณจังหวัดเพชรบุรีและประจวบคีรีขันธ์</p>
+
+                    <!-- Section 4 -->
+                    <h3 id="sec-4" class="article-heading">4. ลมฟ้าอากาศมีความสำคัญต่อชีวิตเราอย่างไร?</h3>
+                    <p class="text-secondary">ลมฟ้าอากาศหรือภูมิอากาศมีส่วนเกี่ยวข้องกับกิจกรรมในชีวิตประจำวันอย่างหลีกเลี่ยงไม่ได้ เช่น การเลือกเสื้อผ้าให้สวมใส่สบาย การช่วยให้เกษตรกรเลือกชนิดหรือพันธุ์พืชที่ต้องการปลูกให้ได้ผลผลิตดี การสร้างบ้านเรือนที่อยู่อาศัยให้เหมาะสมกับสภาพอากาศ ทิศทางลม หรือทิศทางรับแสงอาทิตย์เพื่อประหยัดพลังงาน รวมถึงช่วยให้สามารถวางแผนการเดินทาง การขนส่ง และการท่องเที่ยวได้อย่างสะดวกสบาย</p>
+
+                    <!-- Section 5 -->
+                    <h3 id="sec-5" class="article-heading">5. คำถามที่พบบ่อย (FAQ) และแหล่งข้อมูล</h3>
+                    <p class="text-secondary mb-0">หากต้องการติดตามข้อมูลข่าวสารหรือการพยากรณ์อากาศระยะยาว สามารถติดต่อได้ที่งานบริการข้อมูลสถิติภูมิอากาศของกรมอุตุนิยมวิทยา สายด่วน 1182 หรือเข้าชมผ่านเว็บไซต์หลักเพื่อตรวจสอบประกาศเตือนภัยและสถิติด้านอุตุนิยมวิทยาต่อไป</p>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER SITEMAP (สารบัญล่างสุดแบบเว็บเพจทั่วไป) -->
+    <footer id="footer-sitemap-section" class="footer-sitemap">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: About -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5>เกี่ยวกับศูนย์ข้อมูล</h5>
+                    <p class="small text-secondary mb-3">ระบบสารสนเทศภูมิอากาศ (Climate Info Portal) จัดทำขึ้นเพื่อเผยแพร่ความรู้ทางวิชาการและการเฝ้าระวังปรากฏการณ์สภาพอากาศที่ส่งผลกระทบต่อประเทศไทย</p>
+                    <p class="small text-warning mb-0"><i class="bi bi-code-slash me-1"></i> พัฒนาโดย: <strong>Hayatah Lenu</strong></p>
+                </div>
+                <!-- Column 2: Quick Links / Sitemap -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5>สารบัญเนื้อหาเว็บไซต์</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#sec-1"><i class="bi bi-chevron-right me-1"></i> 1. เอลนีโญและลานีญา คืออะไร?</a></li>
+                        <li><a href="#sec-2"><i class="bi bi-chevron-right me-1"></i> 2. ผลกระทบที่มีต่อประเทศไทย</a></li>
+                        <li><a href="#sec-3"><i class="bi bi-chevron-right me-1"></i> 3. พื้นที่ฝนมากและฝนน้อย</a></li>
+                        <li><a href="#sec-4"><i class="bi bi-chevron-right me-1"></i> 4. ความสำคัญของลมฟ้าอากาศ</a></li>
+                        <li><a href="#sec-5"><i class="bi bi-chevron-right me-1"></i> 5. คำถามที่พบบ่อย (FAQ)</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Contact & Support -->
+                <div class="col-lg-4 col-md-12">
+                    <h5>ติดต่อและช่วยเหลือ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="bi bi-telephone-fill me-2 text-danger"></i> สายด่วนกรมอุตุฯ: 1182</a></li>
+                        <li><a href="#"><i class="bi bi-envelope-fill me-2 text-primary"></i> อีเมล: support@thai-climate.info</a></li>
+                        <li><a href="#"><i class="bi bi-geo-alt-fill me-2 text-success"></i> ที่ตั้ง: เขตจตุจักร กรุงเทพมหานคร</a></li>
+                        <li class="mt-3">
+                            <a href="#" class="btn btn-sm btn-outline-light rounded-pill px-3"><i class="bi bi-arrow-up me-1"></i> กลับสู่ด้านบนสุด</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sub Footer Copyright -->
+    <div class="sub-footer text-center">
+        <div class="container">
+            <p class="mb-0">Copyright © 2026 THAI-CLIMATE.INFO. All Rights Reserved. | จัดทำโดย Hayatah Lenu</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
